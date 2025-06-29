@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Header />
-      
+
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/howitworks" element={<Howitworks />} />
@@ -42,6 +42,15 @@ function App() {
           element={
             <ProtectedRoute>
               <Answer />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="*"
+          element={
+            <ProtectedRoute>
+              <Home />
             </ProtectedRoute>
           }
         />
