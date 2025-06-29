@@ -4,7 +4,7 @@
 
 The **Evangadi Forum Q&A Platform** is a full-stack web application that enables users to ask and answer questions, similar to Stack Overflow. It supports user authentication, secure API integration, and community-based interaction. The platform is built with modern technologies, focusing on performance, user experience, and scalability.
 
-> 🔗 **Live Site:** [evanforum.com](https://evanforum.com)
+> 🔗 **Live Site:** [https://evforum.netlify.app](https://evforum.netlify.app)
 
 ---
 
