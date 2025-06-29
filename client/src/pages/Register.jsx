@@ -71,7 +71,6 @@ function Register() {
               ref={username}
               name="username"
               placeholder="Username"
-              required
             />
           </div>
 
@@ -82,7 +81,6 @@ function Register() {
                 ref={firstname}
                 name="firstname"
                 placeholder="First name"
-                required
               />
             </div>
             <div>
@@ -91,7 +89,6 @@ function Register() {
                 ref={lastname}
                 name="lastname"
                 placeholder="Last name"
-                required
               />
             </div>
           </div>
@@ -102,7 +99,6 @@ function Register() {
               ref={email}
               name="email"
               placeholder="Email address"
-              required
             />
           </div>
 
@@ -114,7 +110,6 @@ function Register() {
                 name="password"
                 placeholder="Password"
                 className={style.passwordInput}
-                required
               />
               <span
                 className={style.icon}

@@ -31,7 +31,7 @@ export default function Answer() {
         const decoded = JSON.parse(atob(tokenParts[1]));
         setCurrentUser(decoded.username);
       } catch (e) {
-        console.error("Failed to decode token");
+        // console.error("Failed to decode token");
       }
     }
   }, [token]);

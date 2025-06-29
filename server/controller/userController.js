@@ -42,7 +42,7 @@ async function register(req, res) {
       .status(StatusCodes.CREATED)
       .json({ msg: "User created successfully" });
   } catch (error) {
-    console.log(error.message);
+    // console.log(error.message);
     return res
       .status(StatusCodes.INTERNAL_SERVER_ERROR)
       .json({ msg: "Something went wrong, try again later" });
@@ -88,7 +88,7 @@ async function login(req, res) {
       .status(StatusCodes.OK)
       .json({ msg: "User login successfully", token });
   } catch (error) {
-    console.log(error.message);
+    // console.log(error.message);
     return res
       .status(StatusCodes.INTERNAL_SERVER_ERROR)
       .json({ msg: "Something went wrong, try again later" });
@@ -126,16 +126,12 @@ async function reset(req, res) {
         "User account deleted successfully. You can now create a new account with this email.",
     });
   } catch (error) {
-    console.log(error.message);
+    // console.log(error.message);
     return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({
       msg: "Something unexpected occurred. Try again later.",
     });
   }
 }
-
-
-
-
 
 async function checkUser(req, res) {
   const username = req.user.username;

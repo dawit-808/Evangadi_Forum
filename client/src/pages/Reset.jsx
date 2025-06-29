@@ -41,7 +41,7 @@ function Reset() {
         navigate("/register");
       }, 2000);
     } catch (err) {
-      console.error("Reset error:", err.response?.data || err.message);
+      // console.error("Reset error:", err.response?.data || err.message);
       setError(err.response?.data?.msg || "Something went wrong");
     }
   }
@@ -84,7 +84,13 @@ function Reset() {
 
         {step === 2 && (
           <form onSubmit={handleConfirmSubmit} className={style.loginform}>
-            <div style={{ marginBottom: "1rem", color: "#555", textAlign: "center" }}>
+            <div
+              style={{
+                marginBottom: "1rem",
+                color: "#555",
+                textAlign: "center",
+              }}
+            >
               Confirm reset for: <strong>{email}</strong>
             </div>
 
@@ -104,7 +110,12 @@ function Reset() {
                   setStep(1);
                   setUsername("");
                 }}
-                style={{ background: "none", border: "none", color: "#007bff", cursor: "pointer" }}
+                style={{
+                  background: "none",
+                  border: "none",
+                  color: "#007bff",
+                  cursor: "pointer",
+                }}
               >
                 Back to email
               </button>

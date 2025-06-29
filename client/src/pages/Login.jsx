@@ -29,7 +29,6 @@ function Login() {
     } catch (error) {
       const errorMsg = error.response?.data?.msg || "Login failed";
       setError(errorMsg);
-      // console.log(error);
     }
   }
 
@@ -53,7 +52,6 @@ function Login() {
               placeholder="Enter your Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              required
             />
           </div>
 
@@ -64,7 +62,6 @@ function Login() {
                 placeholder="Enter your password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                required
                 className={style.passwordInput}
               />
               <span
